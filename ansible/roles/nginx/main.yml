@@ -1,0 +1,9 @@
+---
+- name: ip
+ apt:
+    name= nginx       
+    state= latest
+  when: 
+  ansible_os_family == "Ubuntu"
+  notify:
+    - nginx systemd

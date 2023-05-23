@@ -1,0 +1,5 @@
+---
+- name: install PHP
+  apt:
+    name=php
+    state=latest
